@@ -1,0 +1,25 @@
+body{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    background: burlywood
+}
+#logo{
+    height: 40px;
+}
+#menu{
+    background: none;
+    border: none
+}
