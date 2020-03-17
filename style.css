@@ -1,11 +1,15 @@
+*{
+    box-sizing:border-box
+}
 body{
-    background-color: beige;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    line-height: 1.4;
 }
 
-a{
-    color: green;
+nav a{
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -14,7 +18,7 @@ ul{
     list-style: none;
     padding: 0;
     margin-top: 0;
-    background: burlywood
+    background: white;
 }
 #logo{
     height: 40px;
@@ -22,4 +26,167 @@ ul{
 #menu{
     background: none;
     border: none
+}
+header{
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+header nav{
+    display: none;
+}
+.show{
+    display: block;
+    position: absolute;
+    top: 64px;
+    background: white;
+    width: 100%;
+    height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.show li{
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.overflow{
+    overflow: hidden
+}
+
+#hero{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%, rgba(0,0,0,0.5) 100%), url(img/intro.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+    text-align: center;   
+}
+
+.button{
+    background-color: white;
+    text-transform: uppercase;
+    border: 1px solid #374a67;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #374a67;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: inline-block;    
+}
+
+.button:hover{
+    background-color: #374a67;
+    color: white;
+
+    }
+.card h3 a{
+    color:  #333;
+    text-decoration: none;
+}
+.card p a{
+    color: #828282;
+    text-decoration: none;
+    margin: 1rem;
+    display: block;
+
+}
+.button-blue{
+    background-color: #374a67;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: block;
+    
+}
+.button-blue:hover{
+    background: #fff;
+    color: #374a67;
+}
+.card img{
+    width: 100%;
+    border-radius: 4px;
+    
+}
+.card{
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    text-align: center;
+    margin: 1rem;
+    overflow: hidden;   
+}
+
+#rezepte h2{
+    text-align: center;
+}
+
+
+
+#Newsletter{
+    background: #04122b;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+h2 span{
+    display:block;
+}
+
+#email{
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #04122b;  
+}
+.social ul{
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem 0;
+}
+.social li{
+    margin: 0 1rem;
+    
+}
+
+
+
+
+
+@media( min-width:768px){
+    header nav{
+        display: block;
+    }
+    #menu{
+    display: none;
+    }
+    nav ul {
+    display: flex;
+    }
+    nav li{
+    margin:8px;
+    }
+    .row{
+    display: flex;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        min-height: 100px;
+        align-items: center; 
+    }
+
 }
